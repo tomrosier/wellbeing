@@ -19,13 +19,13 @@ export default class AppView extends React.Component {
   })
 
   tabs = [
-    {
-      key: 'Home',
-      route: <Home />,
-      icon: 'home',
-      iconSet: 'Entypo',
-      label: 'Home',
-    },
+    // {
+    //   key: 'Home',
+    //   route: <Home />,
+    //   icon: 'home',
+    //   iconSet: 'Entypo',
+    //   label: 'Home',
+    // },
     {
       key: 'Survey',
       route: <Survey />,

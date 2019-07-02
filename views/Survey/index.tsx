@@ -1,12 +1,19 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { ScrollView } from "react-native";
+import { Divider } from 'react-native-elements';
+
+
+import GAD7 from '../../components/GAD7';
+import PHQ9 from '../../components/PHQ9';
 
 export default class Survey extends React.Component {
   render() {
     return (
-      <View>
-        <Text>Survey Screen</Text>
-      </View>
+      <ScrollView>
+        {/*<GAD7 />*/}
+        <Divider />
+        <PHQ9 />
+      </ScrollView>
     );
   }
 }
