@@ -63,6 +63,8 @@ export default class PHQ9 extends React.Component {
         warningHasShown: true
       });
     }
+    
+    this.props.putResults(this.questions)
   }
 
   render() {

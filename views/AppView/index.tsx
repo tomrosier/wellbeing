@@ -6,6 +6,7 @@ import { Ionicons } from '@expo/vector-icons';
 import Home from '../Home';
 import Survey from '../Survey';
 import Stats from '../Stats';
+import Settings from '../Settings';
 
 export default class AppView extends React.Component {
 
@@ -39,6 +40,13 @@ export default class AppView extends React.Component {
       iconSet: 'Ionicons',
       route: <Stats />,
       label: 'Stats',
+    },
+    {
+      key: 'Settings',
+      icon: 'settings',
+      iconSet: 'Entypo',
+      route: <Settings />,
+      label: 'Settings',
     }
   ]
 

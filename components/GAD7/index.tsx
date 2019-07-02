@@ -38,6 +38,7 @@ export default class GAD7 extends React.Component {
 
   onValueChange(key, value) {
     this.questions[key].value = value;
+    this.props.putResults(this.questions)
   }
 
   render() {
