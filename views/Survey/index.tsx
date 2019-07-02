@@ -10,7 +10,7 @@ export default class Survey extends React.Component {
   render() {
     return (
       <ScrollView>
-        {/*<GAD7 />*/}
+        <GAD7 />
         <Divider />
         <PHQ9 />
       </ScrollView>

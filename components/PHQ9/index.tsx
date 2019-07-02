@@ -4,8 +4,17 @@ import { Text } from 'react-native-elements';
 
 
 import Question from '../Question';
+import Warning from '../Warning';
 
 export default class PHQ9 extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isWarningVisable: false,
+      warningHasShown: false
+    };
+  } 
+
   questions = {
     "pleasure": {
       "text": "Little interest or pleasure in doing things",
@@ -47,15 +56,22 @@ export default class PHQ9 extends React.Component {
 
   onValueChange(key, value) {
     this.questions[key].value = value;
-    console.log(this.questions);
+
+    if (key == "suicide" && value != "0" && !this.state.warningHasShown) {
+      this.setState({
+        isWarningVisable: true,
+        warningHasShown: true
+      });
+    }
   }
 
   render() {
     return (
       <View>
+        <Warning isVisible={this.state.isWarningVisable} closeHandler={() => this.setState({isWarningVisable: false})} />
         <Text h2>PHQ9 Depression</Text>
         {Object.keys(this.questions).map(key => 
-            <Question text={this.questions[key].text} onValueChange={(value) => this.onValueChange(key, value)}/>)}
+          <Question key={key} text={this.questions[key].text} onValueChange={(value) => this.onValueChange(key, value)}/>)}
       </View>
     );
   }
