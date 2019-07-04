@@ -41,13 +41,13 @@ export default class AppView extends React.Component {
       route: <Stats />,
       label: 'Stats',
     },
-    {
-      key: 'Settings',
-      icon: 'settings',
-      iconSet: 'Entypo',
-      route: <Settings />,
-      label: 'Settings',
-    }
+    // {
+    //   key: 'Settings',
+    //   icon: 'settings',
+    //   iconSet: 'Entypo',
+    //   route: <Settings />,
+    //   label: 'Settings',
+    // }
   ]
 
   constructor(props) {
