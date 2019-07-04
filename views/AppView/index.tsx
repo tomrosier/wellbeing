@@ -27,27 +27,27 @@ export default class AppView extends React.Component {
     //   iconSet: 'Entypo',
     //   label: 'Home',
     // },
-    {
-      key: 'Survey',
-      route: <Survey />,
-      icon: 'work',
-      iconSet: 'Entypo',
-      label: 'Survey',
-    },
-    {
-      key: 'Stats',
-      icon: 'drafts',
-      iconSet: 'Ionicons',
-      route: <Stats />,
-      label: 'Stats',
-    },
     // {
-    //   key: 'Settings',
-    //   icon: 'settings',
+    //   key: 'Survey',
+    //   route: <Survey />,
+    //   icon: 'work',
     //   iconSet: 'Entypo',
-    //   route: <Settings />,
-    //   label: 'Settings',
-    // }
+    //   label: 'Survey',
+    // },
+    // {
+    //   key: 'Stats',
+    //   icon: 'drafts',
+    //   iconSet: 'Ionicons',
+    //   route: <Stats />,
+    //   label: 'Stats',
+    // },
+    {
+      key: 'Settings',
+      icon: 'settings',
+      iconSet: 'Entypo',
+      route: <Settings />,
+      label: 'Settings',
+    }
   ]
 
   constructor(props) {

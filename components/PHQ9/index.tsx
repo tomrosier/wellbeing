@@ -70,7 +70,7 @@ export default class PHQ9 extends React.Component {
   render() {
     return (
       <View>
-        <Text h2>PHQ9 Depression</Text>
+        <Text h2>PHQ-9 Depression</Text>
         {Object.keys(this.questions).map(key => 
           <Question key={key} text={this.questions[key].text} onValueChange={(value) => this.onValueChange(key, value)}/>)}
         <Warning isVisible={this.state.isWarningVisable} closeHandler={() => this.setState({isWarningVisable: false})} />

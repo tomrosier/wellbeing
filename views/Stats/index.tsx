@@ -45,7 +45,7 @@ class Stats extends React.Component {
   render() {
     return (
       <View onLayout={(event) => this.calculateChartSize(event)} style={{flex: 1}}>
-        <Text h2>GAD7 Scores</Text>
+        <Text h2>GAD-7 Scores</Text>
         <LineChart
           data={this.data}
           width={screenWidth}
@@ -55,7 +55,7 @@ class Stats extends React.Component {
           withInnerLines={false}
           fromZero={true}
         />
-        <Text h2>PHQ9 Scores</Text>
+        <Text h2>PHQ-9 Scores</Text>
         <LineChart
           data={this.data}
           width={screenWidth}
