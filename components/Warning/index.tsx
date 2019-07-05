@@ -9,7 +9,11 @@ export default class Warning extends React.Component {
   render() {
     return (
       <View>
-        <Overlay isVisible={this.props.isVisible} onBackdropPress={this.props.closeHandler}>
+        <Overlay 
+            isVisible={this.props.isVisible} 
+            onBackdropPress={this.props.closeHandler}
+            height="auto"
+          >
           <View style={{height: '100%'}}>
             <Text h2>Please seek help.</Text>
             <Text>Information for services that can help can be found below.</Text>
